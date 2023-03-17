@@ -724,7 +724,8 @@ class VideoInfo(object):
 
         params = None
         if self._access_token:
-            headers['Authorization'] = 'Bearer %s' % self._access_token
+            #headers['Authorization'] = 'Bearer %s' % self._access_token
+            pass
         else:
             params = {
                 'key': self._api_key
